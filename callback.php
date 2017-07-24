@@ -27,8 +27,8 @@ if ($message->{"text"} == '確認') {
                 ],
                 [
                     'type' => 'message',
-                    'label' => 'まあまあです',
-                    'text' => 'まあまあです'
+                    'label' => 'ボチボチ',
+                    'text' => 'ボチボチ'
                 ],
             ]
         ]
@@ -41,7 +41,7 @@ if ($message->{"text"} == '確認') {
         'template' => [
             'type' => 'buttons',
             'title' => 'タイトルです',
-            'text' => '選択してね',
+            'text' => '選んでくれたまえ',
             'actions' => [
                 [
                     'type' => 'postback',
@@ -75,8 +75,8 @@ if ($message->{"text"} == '確認') {
                         ],
                         [
                             'type' => 'uri',
-                            'label' => '美容の口コミ広場を見る',
-                            'uri' => 'http://clinic.e-kuchikomi.info/'
+                            'label' => 'マタタビ買って',
+                            'uri' => 'https://www.amazon.co.jp/gp/product/B013JFJLIE/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B013JFJLIE&linkCode=as2&tag=seagull-22&linkId=40072ec4fab82f73bcfd4953c3c0e5e0'
                         ]
                     ]
                 ],
@@ -91,8 +91,8 @@ if ($message->{"text"} == '確認') {
                         ],
                         [
                             'type' => 'uri',
-                            'label' => '女美会を見る',
-                            'uri' => 'https://jobikai.com/'
+                            'label' => '一家に一台',
+                            'uri' => 'https://www.amazon.co.jp/gp/product/B00ONPI95G/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00ONPI95G&linkCode=as2&tag=seagull-22&linkId=4f9edd741c57e792d0e6f8dcea7f0273'
                         ]
                     ]
                 ],
