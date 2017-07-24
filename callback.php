@@ -18,7 +18,7 @@ if ($message->{"text"} == '確認') {
         'altText' => '確認ダイアログ',
         'template' => [
             'type' => 'confirm',
-            'text' => '元気ですかー？',
+            'text' => '元気ですか',
             'actions' => [
                 [
                     'type' => 'message',
