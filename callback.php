@@ -11,7 +11,7 @@ $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 // 送られてきたメッセージの中身からレスポンスのタイプを選択
-if ($message->{"text"} == '確認') {
+if ($message->{"text"} == 'こんにちは') {
     // 確認ダイアログタイプ
     $messageData = [
         'type' => 'template',
@@ -22,35 +22,35 @@ if ($message->{"text"} == '確認') {
             'actions' => [
                 [
                     'type' => 'message',
-                    'label' => 'そういう君はどうにゃんだ？',
-                    'text' => 'そういう君はどうにゃんだ？'
+                    'label' => 'はい',
+                    'text' => 'いいえ'
                 ],
                 [
                     'type' => 'message',
-                    'label' => 'ボチボチだにゃ',
-                    'text' => 'ボチボチだにゃ'
+                    'label' => 'ほぉ',
+                    'text' => 'マタタビやるから元気だせ'
                 ],
             ]
         ]
     ];
-} elseif ($message->{"text"} == 'ボタン') {
+} elseif ($message->{"text"} == 'ネコ') {
     // ボタンタイプ
     $messageData = [
         'type' => 'template',
         'altText' => 'ボタン',
         'template' => [
             'type' => 'buttons',
-            'title' => 'タイトルです',
+            'title' => 'ネコ🐈は好きか？',
             'text' => '選んでくれたまえ',
             'actions' => [
                 [
                     'type' => 'postback',
-                    'label' => 'webhookにpost送信',
+                    'label' => 'はい',
                     'data' => 'value'
                 ],
                 [
                     'type' => 'uri',
-                    'label' => 'googleへ移動',
+                    'label' => 'あまり‥',
                     'uri' => 'https://google.com'
                 ]
             ]
