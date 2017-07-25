@@ -22,13 +22,13 @@ if ($message->{"text"} == '確認') {
             'actions' => [
                 [
                     'type' => 'message',
-                    'label' => '元気です',
-                    'text' => '元気です'
+                    'label' => 'そういう君はどうにゃんだ？',
+                    'text' => 'そういう君はどうにゃんだ？'
                 ],
                 [
                     'type' => 'message',
-                    'label' => 'ボチボチ',
-                    'text' => 'ボチボチ'
+                    'label' => 'ボチボチだにゃ',
+                    'text' => 'ボチボチだにゃ'
                 ],
             ]
         ]
