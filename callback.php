@@ -45,7 +45,7 @@ $response = [
     'replyToken' => $replyToken,
     'messages' => [
         'type' => 'text',
-        'text' => $message->{"へぇ"}
+        'text' => 'へぇ'
 ]
 ];
 
