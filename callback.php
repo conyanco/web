@@ -73,7 +73,7 @@ $response = [
             ]
         ]
     ];
-} elseif ($message->{"text"} == 'カルーセル') {
+} elseif ($message->{"text"} == 'マタタビ') {
     // カルーセルタイプ
     $messageData = [
         'type' => 'template',
