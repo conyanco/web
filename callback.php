@@ -23,16 +23,32 @@ if ($message->{"text"} == 'こんにちは') {
                 [
                     'type' => 'message',
                     'label' => 'はい',
-                    'text' => 'いいえ'
+                    'text' => 'はい'
                 ],
                 [
                     'type' => 'message',
-                    'label' => 'ほぉ',
-                    'text' => 'マタタビやるから元気だせ'
+                    'label' => 'いいえ',
+                    'text' => 'いいえ'
                 ],
             ]
         ]
     ];
+} elseif ($message->{"text"} == 'はい') {
+    // はい
+    $messageData = [
+        'type' => 'text',
+        'text' => $message->{"text"}
+    ];
+}
+
+$response = [
+    'replyToken' => $replyToken,
+    'messages' => [
+        'type' => 'text',
+        'text' => $message->{"へぇ"}
+]
+];
+
 } elseif ($message->{"text"} == 'ネコ') {
     // ボタンタイプ
     $messageData = [
