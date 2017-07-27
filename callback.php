@@ -93,7 +93,7 @@ $response = [
                         [
                             'type' => 'uri',
                             'label' => 'マタタビ買って',
-                            'uri' => 'https://www.amazon.co.jp/gp/product/B013JFJLIE/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B013JFJLIE&linkCode=as2&tag=seagull-22&linkId=40072ec4fab82f73bcfd4953c3c0e5e0'
+                            'uri' => 'https://www.amazon.co.jp/gp/product/B013JFJLIE/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B013JFJLIE&linkCode=as2&tag=nolanuco-22&linkId=40072ec4fab82f73bcfd4953c3c0e5e0'
                         ]
                     ]
                 ],
