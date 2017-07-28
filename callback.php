@@ -33,7 +33,7 @@ if ($message->{"text"} == 'こんにちは') {
             ]
         ]
     ];
-
+/*
 } elseif ($message->{"text"} == 'ねこ') {
     // はい
     $messageData = [
@@ -47,7 +47,7 @@ $response = [
         'type' => 'text',
         'text' => 'へぇ'
 ];
-
+*/
 } elseif ($message->{"text"} == 'ネコ') {
     // ボタンタイプ
     $messageData = [
