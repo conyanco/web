@@ -1,11 +1,11 @@
 <?php
 
 //darkweather key
-$key = 'AIzaSyBZ1uw7HMAGXG01-1sd3tkmFxlTqXeU7a8';
+$key = '2fe7be430e7ddd5e2cbfd162179fa71a';
 
 
 //geocode
-$base_url = 'https://maps.googleapis.com/maps/api/geocode/json?;
+$base_url = 'https://api.darksky.net/forecast/'.$key.$lat.','.$lng;
 
 $curl = curl_init();
 
