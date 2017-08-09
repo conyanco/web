@@ -11,7 +11,7 @@ $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 
-$location = jsonObj->{"events"}[0]->{"city"};
+$location = $jsonObj->{"events"}[0]->{"city"};
 
 require_once 'geo.php';
 require_once 'weather.php';
