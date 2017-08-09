@@ -1,5 +1,6 @@
 <?php
 
+ini_set( 'display_errors', 1 );
 
 $accessToken = '+O9PZhDDNsc1w33rE7/U949xa8I7P9uxUShSGR9LFbABjQrYKo3p+xffPlfDfQu/AjIddjC9DtzyYXiA62fCBgF9ElS0gw4i8tK8E3F9RaspQGrcuSYMati25NRNxMOArqUBvqh6mFWj/Jul/9CPbQdB04t89/1O/w1cDnyilFU=';
 
@@ -13,8 +14,11 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 $location = jsonObj->{"events"}[0]->{"city"};
 
+if{$message->{"text"} =='weather'}{
+
 require_once 'geo.php';
 require_once 'weather.php';
+};
 
 $response = [
     'replyToken' => $replyToken,
