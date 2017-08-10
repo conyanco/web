@@ -1,6 +1,6 @@
 <?php
  
-$accessToken = '+O9PZhDDNsc1w33rE7/U949xa8I7P9uxUShSGR9LFbABjQrYKo3p+xffPlfDfQu/AjIddjC9DtzyYXiA62fCBgF9ElS0gw4i8tK8E3F9RaspQGrcuSYMati25NRNxMOArqUBvqh6mFWj/Jul/9CPbQdB04t89/1O/w1cDnyilFU='';
+$accessToken = '+O9PZhDDNsc1w33rE7/U949xa8I7P9uxUShSGR9LFbABjQrYKo3p+xffPlfDfQu/AjIddjC9DtzyYXiA62fCBgF9ElS0gw4i8tK8E3F9RaspQGrcuSYMati25NRNxMOArqUBvqh6mFWj/Jul/9CPbQdB04t89/1O/w1cDnyilFU=';
  
 //ユーザーからのメッセージ取得
 $json_string = file_get_contents('php://input');
