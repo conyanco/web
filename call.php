@@ -10,6 +10,7 @@ $json_object = json_decode($json_string);
 $replyToken = $json_object->{"events"}[0]->{"replyToken"};        //返信用トークン
 $message_type = $json_object->{"events"}[0]->{"message"}->{"type"};    //メッセージタイプ
 $message_text = $json_object->{"events"}[0]->{"message"}->{"text"};    //メッセージ内容
+$event = $json_object->{"events}
  
 //メッセージタイプが「text」以外のときは何も返さず終了
 //if($message_type != "text") exit;
@@ -18,8 +19,8 @@ if($message_type != "text"){
 
 } exit;
 //返信メッセージ
-$return_message_text = $message_text."って何ですのん？";
- 
+//$return_message_text = $message_text."って何ですのん？";
+ $return_message_text = $event;
 //返信実行
 sending_messages($accessToken, $replyToken, $message_type, $return_message_text);
 ?>
