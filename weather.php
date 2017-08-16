@@ -1,22 +1,15 @@
 <?php
+    $BASE_URL = "http://query.yahooapis.com/v1/public/yql";
 
-//darkweather key
-$key = '2fe7be430e7ddd5e2cbfd162179fa71a';
+    $yql_query = 'select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text="$city, $loca")';
+    $yql_query_url = $BASE_URL . "?q=" . urlencode($yql_query) . "&format=json";
 
+    // Make call with cURL
+    $session = curl_init($yql_query_url);
+    curl_setopt($session, CURLOPT_RETURNTRANSFER,true);
+    $json = curl_exec($session);
+    // Convert JSON to PHP object
+     $phpObj =  json_decode($json);
+    //var_dump($phpObj);
 
-//geocode
-$base_url = 'https://api.darksky.net/forecast/'.$key.$lat.','.$lng;
-
-$curl = curl_init();
-
-curl_setopt($curl, CURLOPT_URL, $base_url.'address='.$location.'='.$key');
-curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'GET');
-curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // 証明書の検証を行わない
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);  // curl_execの結果を文字列で返す
-
-
-$response = curl_exec($curl);
-$result = json_decode($response, true);
-
-curl_close($curl);
 ?>
