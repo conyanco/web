@@ -12,13 +12,14 @@ $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 
-$location = jsonObj->{"events"}[0]->{"city"};
+$loca = jsonObj->{"events"}[0]->{"location"};
+$city = jsonObj->{"events"}[0]->{"city"};
 
-if{$message->{"text"} =='weather'}{
+//if{$message->{"text"} =='weather'}{
 
-require_once 'geo.php';
+//require_once 'geo.php';
 require_once 'weather.php';
-};
+//};
 
 $response = [
     'replyToken' => $replyToken,
