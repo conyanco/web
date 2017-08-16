@@ -20,6 +20,7 @@ $city = jsonObj->{"events"}[0]->{"city"};
 //require_once 'geo.php';
 require_once 'weather.php';
 //};
+$messageData = $phpObj;
 
 $response = [
     'replyToken' => $replyToken,
